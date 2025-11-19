@@ -14,6 +14,8 @@
 # Impressão dos resultados
 #mostre o resultado usando print
 
+
+# minha versão
 estatisticas_vetor <- function(vetor) {
   lista_resultado <- list(
     media = mean(vetor),
@@ -26,3 +28,18 @@ estatisticas_vetor <- function(vetor) {
 }
 estatisticas_vetor(c(1, 5, 3, 9, 2))
 
+# versão do curso
+estatisticas_vetor <- function(vetor) {
+  # Criamos uma lista contendo as estatísticas pedidas
+  lista_resultado <- list(
+    media = mean(vetor),   # Calcula a média dos valores
+    mediana = median(vetor), # Calcula a mediana dos valores
+    maximo = max(vetor),   # Encontra o maior valor
+    menor = min(vetor)     # Encontra o menor valor
+  )  
+}
+ 
+# Exemplo de uso
+vetor_teste <- c(10, 5, 8, 3, 7)
+resultado <- estatisticas_vetor(vetor_teste)
+print(resultado)
